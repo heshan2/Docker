@@ -25,10 +25,10 @@ RUN git clone https://github.com/meganz/sdk.git sdk && cd sdk \
     && cd ~
 
 # Installing MirrorBot dependencies
-RUN curl -sLo /usr/local/bin/extract https://raw.githubusercontent.com/breakdowns/slam-mirrorbot/master/extract \
-    && curl -sLo /usr/local/bin/pextract https://raw.githubusercontent.com/breakdowns/slam-mirrorbot/master/pextract \
+RUN curl -sLo /usr/local/bin/extract https://raw.githubusercontent.com/heshan2/torrent-mirror/master/extract \
+    && curl -sLo /usr/local/bin/pextract https://raw.githubusercontent.com/heshan2/torrent-mirror/master/pextract \
     && chmod +x /usr/local/bin/extract /usr/local/bin/pextract \
-    && wget https://raw.githubusercontent.com/breakdowns/slam-mirrorbot/master/requirements.txt \
+    && wget https://raw.githubusercontent.com/heshan2/torrent-mirror/master/requirements.txt \
     && pip3 install --no-cache-dir -r requirements.txt \
     && rm requirements.txt
 
